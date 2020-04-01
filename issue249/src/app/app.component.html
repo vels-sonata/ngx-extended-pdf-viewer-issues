@@ -1,0 +1,20 @@
+<ng-template #additionalButtons>
+  <div id="toolbarViewer">
+      <div id="toolbarViewerLeft">
+          <pdf-toggle-sidebar></pdf-toggle-sidebar>
+          <div class="toolbarButtonSpacer"></div>
+          <pdf-paging-area></pdf-paging-area>
+      </div>
+      <div id="toolbarViewerRight">
+          <button type="button" class="toolbarButton fas fa-print"></button>
+          <div class="verticalToolbarSeparator hiddenSmallView"></div>
+          <pdf-toggle-secondary-toolbar></pdf-toggle-secondary-toolbar>
+      </div>
+      <pdf-zoom-toolbar></pdf-zoom-toolbar>
+  </div>
+</ng-template>
+<ngx-extended-pdf-viewer [src]="'assets/microservices-reloaded.pdf'"
+  useBrowserLocale="true"
+  height="95vh"
+  [customToolbar]="additionalButtons">
+</ngx-extended-pdf-viewer>
