@@ -1,0 +1,21 @@
+.middlepage{
+  background-color: #ffffff;
+}
+
+.middletoppage{
+  background-color: #ffffff;
+}
+
+.blocPdfViewerAnnotate {
+  float: left;
+}
+
+.search-container {
+  /*height: 1200px;*/
+  background-color: white;
+}
+
+.pdf-container {
+  width: 600px;
+}
+

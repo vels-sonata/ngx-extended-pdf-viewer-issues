@@ -1,0 +1,31 @@
+<div class="search-container">
+  <div id="view-menu" >
+    <div id="button-download">
+      <button class="dwlnd_btn" (click)="previousPage()">
+        <div id="txt-header">prev</div>
+      </button>
+      <button class="dwlnd_btn" (click)="nextPage()">
+        <div id="txt-header">next</div>
+      </button>
+    </div>
+  </div>
+  <div id="view-container">
+    <div style="color: #192a67;width:90%;font-weight: 640;display:inline-block; font-size: 13px;position: relative;">{{currentPage}}</div>
+    <div style="color: #192a67;width:90%;font-weight: 640;display:inline-block; font-size: 13px;position: relative;">{{getSrcDocument()}}</div>
+    <div style="color: #192a67;width:90%;font-weight: 640;display:inline-block; font-size: 13px;position: relative;">{{getAnnotateHeight()}}</div>
+    <div style="color: #192a67;width:90%;font-weight: 640;display:inline-block; font-size: 13px;position: relative;">{{getPdfViewerAnnotateWidth()}}</div>
+    <div class="blocPdfViewerAnnotate" [style.height.px]="getAnnotateHeight()" [style.width.px]="getPdfViewerAnnotateWidth()"
+         *ngIf="getdocumentToShow() !== null && isParagraphe() && getShowModal()">
+       <ngx-extended-pdf-viewer [src]="getSrcDocument()"
+                  backgroundColor="#ffffff"
+                  [height]="'90vh'"
+                  [useBrowserLocale]="true"
+                  [(page)]="currentPage"
+                  [showOpenFileButton]="false"
+                  [showPresentationModeButton]="true"
+                  [handTool]="false"
+                  *ngIf="blocFilterOpened">
+      </ngx-extended-pdf-viewer>
+    </div>
+  </div>
+  </div>
