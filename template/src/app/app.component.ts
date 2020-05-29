@@ -15,12 +15,4 @@ export class AppComponent implements AfterContentInit {
       this.height = `calc(100vh - ${top}px)`;
     }
   }
-
-  public onZoomChange(event: string | number): void {
-    console.log(event);
-  }
-
-  public onCurrentZoomFactor(event: string | number): void {
-    console.log("CZF:" + event);
-  }
 }
