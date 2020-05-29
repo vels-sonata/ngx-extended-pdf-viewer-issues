@@ -13,5 +13,7 @@ This demo comes with three PDF files:
   useBrowserLocale="true"
   [height]="height"
   [showHandToolButton]="true"
+  (zoomChange)="onZoomChange($event)"
+  (currentZoomFactor)="onCurrentZoomFactor($event)"
   >
 </ngx-extended-pdf-viewer>

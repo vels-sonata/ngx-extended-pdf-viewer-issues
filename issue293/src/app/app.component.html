@@ -1,0 +1,12 @@
+
+<ngx-extended-pdf-viewer
+  [src]="'assets/Portugues-para-principiantes-1538054164.pdf'"
+  [textLayer]="true"
+  useBrowserLocale="true"
+  [height]="height"
+  [showHandToolButton]="true"
+  (zoomChange)="onZoomChange($event)"
+  (currentZoomFactor)="onCurrentZoomFactor($event)"
+  [zoom]="'page-fit'"
+  >
+</ngx-extended-pdf-viewer>
