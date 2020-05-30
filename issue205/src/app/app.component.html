@@ -1,0 +1,11 @@
+To check the bug fix works, open the file "/assets/buggy-pdf-file.pdf". If there's an alert box, the feature works.
+
+<ngx-extended-pdf-viewer #viewer
+  [src]="'assets/Portugues-para-principiantes-1538054164.pdf'"
+  [textLayer]="true"
+  useBrowserLocale="true"
+  [height]="height"
+  [showHandToolButton]="true"
+  (pdfLoadingFailed)="onPdfLoadingFailed($event)"
+  >
+</ngx-extended-pdf-viewer>
