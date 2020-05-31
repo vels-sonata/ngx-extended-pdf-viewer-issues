@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "de.beyondjava.pdfhipster"
+    },
+    "jhipsterVersion": "6.6.0",
+    "applicationType": "monolith",
+    "baseName": "pdfhipster",
+    "packageName": "de.beyondjava.pdfhipster",
+    "packageFolder": "de/beyondjava/pdfhipster",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "no",
+    "devDatabaseType": "no",
+    "prodDatabaseType": "no",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NTZhMDYzOTRlYTQ1ODc1OGUzNWRiMDNhMzU2MDEyYmI5ODJhYjcxYWQ4YTMwMGM2NzFlMzUyNmIxOThjMTliMmU1YzVlNWM5YzgxMGE4Y2ZkMjE3M2FiMjRiMjFlZWVhMDFhN2MxYmZmNTMzOTMwOGViN2E4MGYxNjRkZGI0ZDE=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1579026948760,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
