@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ngx-extended-pdf-viewer
+    [src]="'/assets/blind-text-collection.pdf'"
+    showPresentationModeButton="true"
+    useBrowserLocale="true"
+    height="80vh"
+  ></ngx-extended-pdf-viewer>
+</ion-content>

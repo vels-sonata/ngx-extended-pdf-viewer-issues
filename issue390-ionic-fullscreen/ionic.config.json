@@ -1,0 +1,7 @@
+{
+  "name": "issue390-ionic-fullscreen",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
