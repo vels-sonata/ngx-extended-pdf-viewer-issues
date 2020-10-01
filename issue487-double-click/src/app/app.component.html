@@ -1,0 +1,13 @@
+This demo demonstrates what happens when a double click loads a blob twice.
+
+<button (click)="onClick()">Click me twice</button>
+
+<ngx-extended-pdf-viewer #viewer
+  [src]="src"
+  [textLayer]="true"
+  useBrowserLocale="true"
+  [height]="height"
+  [showHandToolButton]="true"
+  [minifiedJSLibraries]="false"
+  >
+</ngx-extended-pdf-viewer>
