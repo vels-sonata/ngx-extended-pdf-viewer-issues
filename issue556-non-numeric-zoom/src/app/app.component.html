@@ -1,0 +1,24 @@
+<h1>Test</h1>
+<div class="form-group">
+  <label for="exampleFormControlSelect1">Select a dummy pdf</label>
+  <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="source">
+    <option [value]="firstPDF">1st dummy pdf</option>
+    <option [value]="secondPDF">2nd dummy pdf</option>
+  </select>
+</div>
+
+<div>
+  <p>Current zoom setting: {{ pdfZoom }}</p>
+</div>
+
+<ngx-extended-pdf-viewer
+  *ngIf="source"
+  [src]="source"
+  [textLayer]="true"
+  [(zoom)]="pdfZoom"
+  theme="dark"
+  useBrowserLocale="true"
+  height="100vh"
+  [showFindButton]="true"
+>
+</ngx-extended-pdf-viewer>
