@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { pdfDefaultOptions } from 'ngx-extended-pdf-viewer';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'issue813-path-plus-iframe';
+
+  constructor() {
+    pdfDefaultOptions.assetsFolder = 'bleeding-edge';
+  }
 }
