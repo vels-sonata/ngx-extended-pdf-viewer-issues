@@ -1,0 +1,16 @@
+This demo comes with three PDF files:
+<ul>
+  <li>The portuguese textbook is a large document with text layer and special characters. Published under an Creative Commons license at https://wisc.pb.unizin.org/portuguese/.</li>
+  <li>The science fiction PDF file is large and contains many images. It has been published on <a href="https://commons.wikimedia.org/wiki/File:Organigramme_simplifi%C3%A9_des_th%C3%A8mes_de_la_Science-fiction.pdf">Wikimedia</a> by the anonymous user Paroliver
+    under an <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a> license, as stated <a href="https://commons.wikimedia.org/wiki/File:Organigramme_simplifi%C3%A9_des_th%C3%A8mes_de_la_Science-fiction.pdf">here</a>.
+    </li>
+  <li>The "giant image flyer" is just that: a file that brings your CPU to its limits. I've found it at <a href="https://www.obwb.ca/library/okanagan-basin-waterscape-poster/">https://www.obwb.ca/library/okanagan-basin-waterscape-poster/</a></li>
+</ul>
+<ngx-extended-pdf-viewer #viewer
+  [src]="'assets/Portugues-para-principiantes-1538054164.pdf'"
+  [textLayer]="true"
+  useBrowserLocale="true"
+  [height]="height"
+  [showHandToolButton]="true"
+  >
+</ngx-extended-pdf-viewer>
